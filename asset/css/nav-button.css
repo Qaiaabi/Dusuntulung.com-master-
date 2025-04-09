@@ -1,0 +1,47 @@
+.popup-navigation {
+    position: fixed;
+    bottom: 20px; /* Jarak dari bawah */
+    right: 20px; /* Jarak dari kanan */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Jarak antar tombol */
+    z-index: 1000;
+}
+
+.popup-button {
+    background-color: #e44151;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.2s;
+    padding: 0;
+}
+
+.popup-button:hover {
+    background-color: #bf2b40;
+    transform: scale(1.1);
+}
+
+.popup-button:active {
+    transform: scale(0.95);
+}
+
+/* Custom Arrow Icons */
+.popup-button svg {
+    fill: white;
+    width: 20px;
+    height: 20px;
+}
+@media (max-width: 770px){
+    .popup-navigation{
+        bottom: 70px;
+    }
+}

@@ -1,0 +1,173 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 30px;
+  max-width: 1250px;
+  padding: 0 10px;
+  /* Tambahkan padding untuk layar kecil */
+}
+
+.card {
+  height: 350px;
+  width: 370px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  position: absolute;
+  height: 210px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 16px;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(30%);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.card:hover .card-content {
+  transform: translateY(0px);
+}
+
+.card-content h3 {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.card-content p {
+  color: #666;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.fade-overlay {
+  position: absolute;
+  bottom: 0px;
+  /* Beri ruang untuk tombol */
+  left: 0;
+  right: 0;
+  height: 80px;
+  /* Tinggi lapisan */
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  z-index: 2;
+  /* Tepat di bawah tombol */
+  pointer-events: none;
+  /* Agar tidak mengganggu klik tombol */
+}
+
+.card .btn {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e44151;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  z-index: 3;
+  /* Lebih tinggi dari fade-overlay */
+}
+
+.card .btn:hover {
+  background-color: #c92c3d;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .card {
+    height: 290px;
+    width: 100%;
+    /* Penuh di layar kecil */
+  }
+
+  .card-image {
+    height: 150px;
+    /* Kurangi tinggi gambar */
+  }
+
+  .card:hover .card-content {
+    transform: translateY(40px);
+  }
+
+  .card-content h3 {
+    font-size: 18px;
+    /* Ukuran font lebih kecil */
+  }
+
+  .card-content p {
+    font-size: 14px;
+    /* Ukuran font lebih kecil */
+  }
+
+  .card .btn {
+    bottom: 12px;
+    /* Sesuaikan posisi tombol */
+    padding: 6px 12px;
+    /* Kurangi ukuran padding tombol */
+    font-size: 14px;
+    /* Font tombol lebih kecil */
+  }
+
+  .fade-overlay {
+    height: 60px;
+    /* Sesuaikan tinggi lapisan */
+  }
+}
+
+.btn-yellow{
+  background-color: yellow;
+}
+
+/* Responsif untuk layar sangat kecil (ponsel) */
+@media (max-width: 480px) {
+  .card-content {
+    padding: 12px;
+    /* Kurangi padding konten */
+  }
+
+  .card-content h3 {
+    font-size: 16px;
+    /* Ukuran font lebih kecil */
+  }
+
+  .card-content p {
+    font-size: 12px;
+    /* Ukuran font lebih kecil */
+  }
+
+  .card .btn {
+    padding: 5px 10px;
+    /* Ukuran tombol lebih kecil */
+    font-size: 12px;
+    /* Font tombol lebih kecil */
+  }
+}

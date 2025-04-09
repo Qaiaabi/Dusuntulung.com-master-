@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dusun Tulung - Nyawiji Ambangun Negari</title>
+    <link rel="shortcut icon" href="asset/img/icon-DUSUN-TULUNG.png">
+    <link rel="stylesheet" href="asset/css/bootstrap.css">
+    <link rel="stylesheet" href="asset/css/swipper.css">
+    <link rel="stylesheet" href="asset/aos/aos.css">
+
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <link rel="stylesheet" href="asset/css/nav.css">
+    <link rel="stylesheet" href="asset/css/nav-button.css">
+    <link rel="stylesheet" href="asset/css/paralax.css">
+    <link rel="stylesheet" href="asset/css/profile.css">
+    <link rel="stylesheet" href="asset/css/judul.css">
+    <link rel="stylesheet" href="asset/css/umkn.css">
+    <link rel="stylesheet" href="asset/css/kegiatan.css">
+    <link rel="stylesheet" href="asset/css/artikel.css">
+</head>
+
+<body>
+    <!-- Navbar atas -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="asset/img/logo-DUSUN-TULUNG.png" width="150" alt="Dusun Tulung Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home" onclick="setActive(this)">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#profile" onclick="setActive(this)">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#umkm" onclick="setActive(this)">UMKM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kegiatan" onclick="setActive(this)">Kegiatan</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#artikel" onclick="setActive(this)">Artikel</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar bawah -->
+    <nav class="navbar navbar-dark navbar-bottom">
+        <div class="container-fluid">
+            <ul class="navbar-nav d-flex flex-row justify-content-between w-100">
+                <li class="nav-item"><a class="nav-link active" href="#home" onclick="setActive(this)">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#profile" onclick="setActive(this)">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="#umkm" onclick="setActive(this)">UMKM</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kegiatan" onclick="setActive(this)">Kegiatan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#artikel" onclick="setActive(this)">Artikel</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="popup-navigation">
+        <button id="scrollUp" class="popup-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 5l-7 7h14l-7-7z" />
+            </svg>
+        </button>
+        <button id="scrollDown" class="popup-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 19l7-7H5l7 7z" />
+            </svg>
+        </button>
+    </div>
+
+
+
+    <section id="home">
+        <div class="parallax-container">
+            <div class="parallax-overlay"></div>
+            <div class="parallax-content">
+                <h1 data-aos="fade-down" data-aos-duration="1000">DUSUN TULUNG</h1>
+                <p data-aos="fade-left" data-aos-duration="1000">Selamat datang di Dusun Tulung, tempat di mana kearifan
+                    lokal dan kebersamaan mewarnai kehidupan
+                    sehari-hari. Kami mengundang Anda untuk menikmati pesona dan kehangatan Dusun Tulung bersama kami!
+                </p>
+                <a data-aos="fade-up" data-aos-duration="1000" href="#profile" class="btn">Explore Dusun Tulung</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="padding" id="profile"><br>
+
+        <center>
+            <div class="text-with-svg" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <h1>PROFILE DUSUN TULUNG</h1>
+
+                <span class="pp"><img src="headling v1.svg" alt="SVG Icon">
+
+                </span>
+            </div>
+        </center>
+
+        <div class="profile-container">
+            <img data-aos="flip-left" data-aos-delay="500" data-aos-duration="1000" src="asset/img/gapura1x1.jpg"
+                alt="Dusun Tulung Image" class="profile-image">
+            <div class="profile-content" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+                <p class="profile-description">
+                    Dusun Tulung, yang terletak di Kelurahan Srihardono, Kecamatan Pundong, Bantul, Yogyakarta, adalah
+                    sebuah desa yang memancarkan keaslian budaya dan keindahan alam yang tetap terjaga. Dikelilingi oleh
+                    hamparan sawah yang subur dan mengalirnya Sungai Opak, Dusun Tulung tidak hanya menawarkan
+                    pemandangan memukau, tetapi juga keanekaragaman hayati dan hasil bumi yang kaya.
+                </p>
+                <br>
+                <p class="profile-description">
+                    Di sinilah, kekayaan alam bertemu dengan kearifan lokal. Masyarakat Tulung dengan penuh dedikasi
+                    mengolah hasil bumi menjadi pangan khas yang sarat dengan nilai sejarah dan budaya. Kelapa diubah
+                    menjadi Geplak yang manis, singkong diolah menjadi tepung kanji dan disulap menjadi Bakmi Pentil dan
+                    Miedes, sementara kedelai diproses menjadi kembang tahu dan kripik kedelai. Setiap produk ini adalah
+                    simbol keaslian dan identitas budaya yang dijaga dan dilestarikan dengan sepenuh hati.
+                </p>
+                <a href="artikel/profile.html" class="btn">Selengkapnya...</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="umkm">
+        <br>
+        <center>
+            <div class="text-with-svg" data-aos="fade-up" data-aos-duration="1000">
+                <h1>UMKM DUSUN TULUNG</h1>
+
+                <span class="pp"><img src="headling v1.svg" alt="SVG Icon">
+
+                </span>
+            </div>
+        </center>
+
+        <center>
+            <div class="deskripsi-umkn" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
+                <p style="text-align: center;">
+                    <b>Cita Rasa Tradisional dari Kekayaan Alam</b>
+                    <br>
+                    Dusun Tulung, dengan keindahan alamnya yang asri, menjadi saksi tumbuhnya berbagai usaha mikro kecil
+                    dan
+                    menengah (UMKM) yang mengolah hasil bumi lokal menjadi produk khas yang kaya akan cita rasa
+                    tradisional.
+                    Berbekal bahan-bahan alami, masyarakat Dusun Tulung memadukan kearifan lokal dan keterampilan
+                    turun-temurun
+                    untuk menciptakan beragam olahan unik yang menggugah selera.
+                </p>
+            </div>
+
+
+            <div class="umkn-container">
+                <div class="box" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000"
+                    style="background-image: url('asset/img/UMKN_geplaku_nughroho.png');">
+                    <a href="">
+                        <div class="text">
+                            <h3>Geplak Bantul</h3><br>
+                            <p>-Geplakku-</p><br>
+                            <center>
+                                <div class="umkn-explore">Explore</div>
+                            </center>
+                        </div>
+                    </a>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000"
+                    style="background-image: url('asset/img/UMKN_kerupuk-Kembar_mbah-marto.jpg');">
+                    <a href="">
+                        <div class="text">
+                            <h3>Kerupuk Merah</h3><br>
+                            <p>-Mbah Marto-</p><br>
+                            <center>
+                                <div class="umkn-explore">Explore</div>
+                            </center>
+                        </div>
+                    </a>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1000"
+                    style="background-image: url('asset/img/UMKN_mie-tapioka_bu-rini1.png');">
+                    <a href="">
+                        <div class="text">
+                            <h3>Mie Tapioka</h3><br>
+                            <p>-Bu rini-</p><br>
+                            <center>
+                                <div class="umkn-explore">Explore</div>
+                            </center>
+                        </div>
+                    </a>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-delay="2500" data-aos-duration="1000"
+                    style="background-image: url('asset/img/UMKN_satefa_pusri.png');">
+                    <a href="">
+                        <div class="text">
+                            <h3>Keripik Tempe</h3><br>
+                            <p>-Satefa-</p><br>
+                            <center>
+                                <div class="umkn-explore">Explore</div>
+                            </center>
+                        </div>
+                    </a>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="1000"
+                    style="background-image: url('asset/img/UMKN_sri-oca_pak-wardani.jpg');">
+                    <a href="">
+                        <div class="text">
+                            <h3>Mie Des</h3><br>
+                            <p>-Sri Oca-</p><br>
+                            <center>
+                                <div class="umkn-explore">Explore</div>
+                            </center>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <br>
+            <a href="umkn/index.html" class="btn">Explore UMKM Dusun Tulung</a>
+        </center>
+    </section>
+
+    <section id="kegiatan">
+        <br>
+        <center>
+            <div class="text-with-svg" data-aos="fade-up" data-aos-duration="1000">
+                <h1>KEGIATAN DI DUSUN TULUNG</h1>
+
+                <span class="pp"><img src="headling v1.svg" alt="SVG Icon">
+
+                </span>
+            </div>
+            <div class="card-container">
+                <div class="card" data-aos="fade-left" data-aos-delay="00" data-aos-duration="1000">
+                    <div class="card-image">
+                        <img src="asset/img/kegiatan/WhatsApp Image 2025-02-18 at 20.02.01 - bangun hermanto.jpeg"
+                            alt="Gambar">
+                    </div>
+                    <div class="card-content">
+                        <h3>Tradisi Dekahan Ruwahan</h3>
+                        <p>
+                            <b>"dekahan dan ruwahan di dusun tulung"</b>
+                            <br><br>
+                            Dalam garis waktu pada sebuah peradaban, khasanah buadaya dan kearifan memberikan
+                            keistimwaan tertentu pada setiap keadaan yang memang dianggap memiliki nilai yang sakral.
+                            Seperti yang bisa kita lihat dalam peradaban Islam, terdapat empat bulan memiliki kemuliaan
+                            lebih dari bulan bulan yang lain. Bulan itu adalah Dzulqa'dah, Dzulhijjah, Muharram, dan
+                            Rajab. Keempat bulan ini disebut juga sebagai al-asyhur al-hurum atau bulan-bulan haram.
+                        </p>
+                    </div>
+                    <a href="#" class="btn">Lihat Kegiatan</a>
+                    <div class="fade-overlay"></div>
+                </div>
+                <div class="card" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
+                    <div class="card-image">
+                        <img src="asset/img/kegiatan/umkn-boost.jpg" alt="Gambar">
+                    </div>
+                    <div class="card-content">
+                        <h3>UMKN Boost</h3>
+                        <p>
+                            <b>"Sinergi Pemuda dan UMKM: Menggerakkan Ekonomi Desa"</b>
+                            <br><br>
+                            Di Era moderenisasi ini kita perlu mengembangkan dan juga menggali potensi-potensi yang ada,
+                            mulai dari diri kita sendiri, menggali potensi dari UMKN yang ada di desa kita. Untuk itu di
+                            adakanlah Event UMKN boost
+                            yang bertujuan untuk mengenali potensi tersebut
+                        </p>
+                    </div>
+                    <a href="#" class="btn">Lihat Kegiatan</a>
+                    <div class="fade-overlay"></div>
+                </div>
+                <div class="card" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+                    <div class="card-image">
+                        <img src="asset/img/kegiatan/malam-tirakatn.jpg" alt="Gambar">
+                    </div>
+                    <div class="card-content">
+                        <h3>Perayaan Malam Tirakatan</h3>
+                        <p>
+                            <b>"Gotong Royong: Semangat Persatuan dalam Persiapan Malam Tirakatan"</b>
+                            <br><br>
+                            Di Desa Tulung, semangat gotong royong kembali hidup saat warga dan pemuda bersatu
+                            mempersiapkan malam tirakatan
+                            untuk memperingati Hari Kemerdekaan Indonesia.
+                        </p>
+                    </div>
+                    <a href="#" class="btn">Lihat Kegiatan</a>
+                    <div class="fade-overlay"></div>
+                </div>
+                <div class="card" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1000">
+                    <div class="card-image">
+                        <img src="asset/img/kegiatan/persiapan-tirakatan.png" alt="Gambar">
+                    </div>
+                    <div class="card-content">
+                        <h3>Persiapan Malam Tirakatan</h3>
+                        <p>
+                            <b>"Gotong Royong: Semangat Persatuan dalam Persiapan Malam Tirakatan"</b>
+                            <br><br>
+                            Di Desa Tulung, semangat gotong royong kembali hidup saat warga dan pemuda bersatu
+                            mempersiapkan malam tirakatan
+                            untuk memperingati Hari Kemerdekaan Indonesia.
+                        </p>
+                    </div>
+                    <a href="#" class="btn">Lihat Kegiatan</a>
+                    <div class="fade-overlay"></div>
+                </div>
+                <div class="card" data-aos="fade-left" data-aos-delay="2000" data-aos-duration="1000">
+                    <div class="card-image">
+                        <img src="asset/img/kegiatan/agustusan.jpg" alt="Gambar">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lomba Agustusan</h3>
+                        <p>
+                            <b>"Serunya Lomba Makan Kerupuk di Kampung: Tradisi yang Tak Pernah Lekang oleh Waktu!"</b>
+                            <br><br>
+                            Di tengah hiruk-pikuk perayaan kemerdekaan yang penuh semangat, lomba makan kerupuk selalu
+                            menjadi salah satu
+                            kegiatan yang paling ditunggu-tunggu oleh warga desa.
+                        </p>
+                    </div>
+                    <a href="#" class="btn">Lihat Kegiatan</a>
+                    <div class="fade-overlay"></div>
+                </div>
+                <!-- <div class="card"
+                data-aos="fade-left"
+                data-aos-delay="2500"
+                data-aos-duration="1000">
+                    <div class="card-image">
+                        <img src="asset/img/kegiatan/besik.jpg" alt="Gambar">
+                    </div>
+                    <div class="card-content">
+                        <h3>Besik Sesaren</h3>
+                        <p>
+                            <b>"Gotong Royong: Semangat Persatuan dalam Persiapan Malam Tirakatan"</b>
+                            <br><br>
+                            Di Desa Tulung, semangat gotong royong kembali hidup saat warga dan pemuda bersatu
+                            mempersiapkan malam tirakatan
+                            untuk memperingati Hari Kemerdekaan Indonesia.
+                        </p>
+                    </div>
+                    <a href="#" class="btn">Lihat Kegiatan</a>
+                    <div class="fade-overlay"></div>
+                </div> -->
+            </div>
+            <br>
+            <a href="kegiatan/index.html" class="btn">Lihat Kegiatan Lainnya</a>
+    </section>
+
+
+    <section id="artikel">
+        <br>
+        <center>
+            <div class="text-with-svg" data-aos="fade-up" data-aos-duration="1000">
+                <h1>ARTIKEL</h1>
+                <span class="pp"><img src="headling v1.svg" alt="SVG Icon">
+                </span>
+            </div>
+        </center>
+
+        <div class="artikel-card-container">
+            <div class="artikel-card" data-aos="fade-up" data-aos-duration="1000">
+                <img src="asset/img/kegiatan/WhatsApp Image 2025-02-18 at 20.02.01 - bangun hermanto.jpeg"
+                    alt="Card Image">
+                <div class="artikel-card-content">
+                    <h3>Tradisi Dekahan Ruwahan</h3>
+                    <p>dekahan ruahan di dusun tulung</p>
+                    <div class="artikel-card-profile">
+                        <img src="../asset/img/artikel/profile/bangun.png" alt="Profile Picture">
+                        <span>Bangun Hermanto</span>
+                    </div>
+                    <a href="artikel/dekahan-ruwahan.html">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="artikel-card" data-aos="fade-up" data-aos-duration="1000">
+                <img src="asset/img/artikel/artikel/gapura.jpg" alt="Card Image">
+                <div class="artikel-card-content">
+                    <h3>Profile Dusun Tulung</h3>
+                    <p>informasi tentang dusun tulung yang terletak di kecamatan pundong</p>
+                    <div class="artikel-card-profile">
+                        <img src="asset/img/artikel/profile/dusuntulung.jpg" alt="Profile Picture">
+                        <span>Dusun Tulung</span>
+                    </div>
+                    <a href="artikel/profile.html">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="artikel-card" data-aos="fade-up" data-aos-duration="1000">
+                <img src="asset/img/artikel/artikel/makam-pakuwojo.jpg" alt="Card Image">
+                <div class="artikel-card-content">
+                    <h3>Sejarah Dusun Tulung</h3>
+                    <p>kisah tentang sejarah dusun tulung dan pangeran paku wojo</p>
+                    <div class="artikel-card-profile">
+                        <img src="asset/img/artikel/profile/bangun.png" alt="Profile Picture">
+                        <span>Bangun Hermanto</span>
+                    </div>
+                    <a href="artikel/sejarah.html">Baca Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <center>
+            <a href="artikel/index.html" class="btn">Lihat Artikel Lainnya</a>
+        </center>
+
+    </section>
+
+
+
+    <br><br>
+    <script src="../asset/aos/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="asset/js/nav.js"></script>
+    <script src="asset/js/nav-button.js"></script>
+    <script src="asset/js/umkm.js"></script>
+    <script src="asset/js/kegiatan.js"></script>
+    <script src="asset/js/bootstrap.js"></script>
+    <script src="asset/js/swipper.js"></script>
+</body>
+
+</html>

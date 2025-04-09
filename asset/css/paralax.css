@@ -1,0 +1,59 @@
+
+    /* Container dengan efek paralaks */
+    .parallax-container {
+        position: relative;
+        background-image: url('../img/gapura.jpg'); /* Ganti dengan URL gambar Anda */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        color: white;
+        display: flex;
+        align-items: center;
+      }
+  
+      /* Overlay gelap untuk membuat teks lebih jelas */
+      .parallax-overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+  
+      /* Konten di atas overlay */
+      .parallax-content {
+        position: relative;
+        z-index: 2;
+        text-align: left;
+        padding: 2rem;
+      }
+  
+      /* Gaya heading dan paragraf */
+      .parallax-content h1 {
+        font-size: 5vh;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+  
+      .parallax-content p {
+        font-size: 2vh;
+        margin-bottom: 2rem;
+      }
+  
+      /* Tombol */
+      .parallax-content .btn {
+        background-color: #e44151;
+        border: none;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 5px;
+      }
+  
+      .parallax-content .btn:hover {
+        background-color: #c83244;
+      }
